@@ -17,7 +17,7 @@ body {
 	background-image: url("../images/background.jpg");
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center bottom;
+	background-position: center;
 	transform: opacity 0;
 }
 body.loading {
