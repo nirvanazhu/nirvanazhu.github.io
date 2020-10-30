@@ -94,6 +94,14 @@ img.avatar:hover, img.avatar:focus {
 div.name {
 	text-shadow: 0 0 6px #000;
 }
+div.link {
+	font-size: 18px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: left;
+	font-family: "Consolas";
+	position: absolute; left: 20px; top: 20px;
+}
 h1.name {
 	font-size: 44px;
 	font-weight: normal;
@@ -124,12 +132,26 @@ p.moto {
 	text-shadow: 0 0 6px #000;
 	margin: 15px;
 }
+p.link {
+	font-size: 18px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: left;
+	font-family: "Consolas";
+}
 p {
 	font-size: 15px;
 }
 a.sns-link {
 	display: inline-block;
 	margin: 0 10px;
+}
+a.link {
+	font-size: 18px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: left;
+	font-family: "Consolas";
 }
 a.sns-link:hover, a.sns-link:focus {
 	transform: scale(1.2);
