@@ -1,126 +1,142 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>奈的小屋 | Aqua Nir</title>
-<meta name="description" content="奈 - Aqua Nir">
-<meta name="keywords" content="">
-<link rel="stylesheet" href="./css/loaders.min.css">
-<style type="text/css">
-	body.loading section.content div.container > * {
-		display: none;
-	}
-	body.loading:before {
-		content: "";
-		position: fixed;
-		display: grid;
-		align-items: center;
-		text-align: center;
-		width: 100vw;
-		height: 100vh;
-		background-color: white;
-		color: #DBDBDB;
-		transition: all 1s;
-	}
-	body.loading section.content {
-		height: 100vh;
-		width: 100vw;
-		max-width: 100vw;
-	}
-	body.loading section.title-name {
-		display: block !important;
-		color: #DBDBDB;
-		z-index: 1000;
-	}
-	body.loading section.title-name > * {
-		border-color: #DBDBDB;
-		text-shadow: none;
-	}
-	body.loading section.title-name p.moto {
-		display: none;
-	}
-	body.loading div.ball-pulse {
-		display: block;
-		position: absolute;
-		bottom: 20px;
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="nyan~">
+    <title>奈的小屋 | Aqua Nir</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+  </head>
 
-	}
-	div.ball-pulse-sync>div, .ball-pulse>div, .ball-scale-random>div, .ball-scale>div {
-		background-color: #DBDBDB;
-	}
-	@media (orientation: landscape) {
-		body.loading section.content div.container section.title-name {
-			display: flex !important;
-			align-items: center;
-			justify-content: center;
-		}
-		body.loading section.content div.container section.title-name div.name {
-			margin-left: 30px;
-		}
-	}
-</style>
-<link rel="stylesheet" href="./css/main.css">
-</head>
-<body id="page" class="loading">
-<script type="text/javascript">
-document.onreadystatechange = function () {
-	if (document.readyState === "complete") {
-		setTimeout(function(){
-		    document.getElementById("page").className = "transform";
-		}, 500);
-		setTimeout(function(){
-		    document.getElementById("page").className = "done";
-		}, 1000);
-  }
-}
-</script>
-	<section class="content">
-		<div class="container">
-			<section class="sns-link" id="navigation">
-				<div class="link"><a href="https://aquanir.cc/archive/"; class="link">Archive</a></div>
-			</section>
-			<section class="title-name">
-				<img src="./images/avatar.jpg" alt="别动我的头" class="avatar" width="120" height="120">
-				<div class="name">
-					<h1 class="name">奈</h1>
-					<p class="name-ruby">Aqua Nir</p>
-					<!-- loading el -->
-					<div class="ball-pulse"><div></div><div></div><div></div></div>
-				</div>
-				<p class="moto">看花束零落在风和时间的秘隙里。</p>
-			</section>
-			<section class="sns-links">
-				<a href="https://nyaa.cat" target="_blank" alt="一起玩！" title="一起玩！" class="sns-link"><img src="./images/nyaa-wt.png" width="28" height="28"></a>
-				<a href="https://twitter.com/nirvanazhu" target="_blank" alt="涩图查看器" title="涩图查看器" class="sns-link"><img src="./images/twitter-wt.png" width="28" height="28"></a>
-				<a href="https://steamcommunity.com/id/nirvanazhu" target="_blank" alt="快乐屋" title="快乐屋" class="sns-link"><img src="./images/steam-wt.png" width="28" height="28"></a>
-			</section>
-			<img src="./images/usagi-2.png" width="auto" height="66" alt="rua！" class="decoration">
-			<section class="text-container" id="about">
-				<h2 class="h2-title">About</h2>
-				<p>摸鱼 minecraft 云玩家，国家级保护废物，五星级买买买爱好者。拒用国内某些主流软件的异端，<s>时常感慨自己年事已高</s>。主要出没于喵窝<s>的群里</s>，绝赞社恐中~</p><br>
-				<p>头像 / 喵田弥夜<br>社群 / NyaaCat Community</p>
-			</section>
-			<img src="./images/usagi-3.png" width="auto" height="66" alt="猫猫！" class="decoration">
-			<section class="text-container" id="contacts">
-				<h2 class="h2-title">Contact</h2>
-				<p>游戏ID: <font face="Consolas">Aqua_Nir</font></a></p>
-				<p>Steam: <font face="Consolas">nirvanazhu</font></a></p>
-				<p>Email: <font face="COnsolas">hello@aquanir.cc</font></p>
-			</section>
-			<section class="text-container" id="links">
-				<br><br><br>
-				<p>
-					<font size="2">背景 </font><a href="https://www.pixiv.net/en/artworks/84655195" target="_blank">
-						<font face="Consolas">84655195
-					</a></font> / <font size="2">去康康 </font><a href="https://rikka.moe" target="_blank" alt="是贴贴w" title="是贴贴w">
-						<font face="Consolas">rikka.moe
-					</a></font>
-					<font size="2"> / &copy 2021 nyan~</font>
-				</p>
-			</section>
-		</div>
-	</section>
-</body>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo"></h2>
+        <div class="toggle"></div>
+      </header>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Exploring The World</h2>
+        <h3>
+          和
+          <div id="typed-strings">
+            <p>瓜蓝</p>
+            <p>卷卷</p>
+            <p>花花</p>
+            <p>西西</p>
+            <p>兽兽</p>
+            <p>李得二</p>
+            <p>阿姨艾恩</p>
+            <p>柚子</p>
+            <p>cicini</p>
+            <p>名木</p>
+            <p>酱日</p>
+            <p>美羽姐姐</p>
+            <p>貔貅</p>
+            <p>馨喵</p>
+            <p>++</p>
+            <p>zz</p>
+          </div>
+          <span id="typed"></span>
+          一起。
+        </h3>
+        <a id="button" href="https://blog.aquanir.cc">奈的日记</a>
+      </div>
+      
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/nirvanazhu"
+            ><svg width="50" viewBox="0 0 512 512">
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              ></path></svg></a>
+        </li>
+        <li>
+          <a href="https://github.com/nirvanazhu"
+            ><svg width="50" viewBox="0 0 496 512">
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path></svg></a>
+        </li>
+        <li>
+          <a href="https://t.me/nirvanazhu"
+            ><svg width="50" viewBox="0 0 448 512">
+              <path
+                d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="https://aquanir.cc">Home</a></li>
+        <li><a href="https://blog.aquanir.cc">Blog</a></li>
+        <li><a href="https://lab.aquanir.cc">Lab</a></li>
+        <li><a href="https://unlocker.aquanir.cc">Tool</a></li>
+        <li><a href="https://blog.aquanir.cc/about">About</a></li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <script>
+      var _0x354e = [
+        "querySelector",
+        ".toggle",
+        ".showcase",
+        "addEventListener",
+        "click",
+        "classList",
+        "toggle",
+        "active",
+      ];
+      (function (_0x592281, _0x559607) {
+        var _0x54c743 = function (_0x3c43f0) {
+          while (--_0x3c43f0) {
+            _0x592281["push"](_0x592281["shift"]());
+          }
+        };
+        _0x54c743(++_0x559607);
+      })(_0x354e, 0x1e8);
+      var _0x5918 = function (_0x17feea, _0x2c6044) {
+        _0x17feea = _0x17feea - 0x0;
+        var _0x3884fb = _0x354e[_0x17feea];
+        return _0x3884fb;
+      };
+      const menuToggle = document[_0x5918("0x0")](_0x5918("0x1"));
+      const showcase = document[_0x5918("0x0")](_0x5918("0x2"));
+      menuToggle[_0x5918("0x3")](_0x5918("0x4"), () => {
+        menuToggle[_0x5918("0x5")][_0x5918("0x6")](_0x5918("0x7"));
+        showcase[_0x5918("0x5")][_0x5918("0x6")](_0x5918("0x7"));
+      });
+    </script>
+    <script>
+      var _0x32d9 = ["#typed", "#typed-strings"];
+      (function (_0x99a258, _0x206e49) {
+        var _0x4ccd77 = function (_0x2b634b) {
+          while (--_0x2b634b) {
+            _0x99a258["push"](_0x99a258["shift"]());
+          }
+        };
+        _0x4ccd77(++_0x206e49);
+      })(_0x32d9, 0x14a);
+      var _0x2cb9 = function (_0x5e504e, _0x16e957) {
+        _0x5e504e = _0x5e504e - 0x0;
+        var _0x1c6e7c = _0x32d9[_0x5e504e];
+        return _0x1c6e7c;
+      };
+      var typed = new Typed(_0x2cb9("0x0"), {
+        stringsElement: _0x2cb9("0x1"),
+        typeSpeed: 0x64,
+        backSpeed: 0x64,
+        backDelay: 0x3e8,
+        shuffle: !![],
+        loop: !![],
+        loopCount: Infinity,
+      });
+    </script>
+  </body>
 </html>
