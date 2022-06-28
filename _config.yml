@@ -1,1 +1,13 @@
-theme: jekyll-theme-cayman
+title: Redirect
+description: URL redirect service by nirvanazhu
+logo: /assets/img/logo.png
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-minimal
+
+permalink: /:slug/
+
+plugins:
+  - jekyll-redirect-from
+
+#repository: hlaueriksson/jekyll-url-shortener
