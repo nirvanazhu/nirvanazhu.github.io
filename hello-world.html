@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World!</title>
+</head>
+
+<body>
+    <div class="bottom">
+        <h1>Hello World<span>!</span></h1>
+        <div class="about">
+            <p>你与服务器已成功建立连接。</p>
+            <p>当你看到这个页面的时候，表明服务已正常运作。<a href="javascript:getHelp();">需要帮助？</a></p>
+            <div class="help" id="help">
+                <p><b>我为什么会看到这个页面？</b></p>
+                <p>你能够访问这个页面表明你已经成功连接到了对应服务器的 HTTP 服务。</p>
+                <p>如果这不是你期待的，可能是因为你访问的地址未配置或不需要前端、服务尚未完成部署、错误的进入了黑洞或受到了境界线的干扰。</p>
+                <p>你可以<a href="javascript:history.back(-1);">点击这里返回之前的世界线</a>。</p>
+                <p>如有任何问题，你可以联系管理员寻求帮助。</p>
+            </div>
+            <p class="ss">&copy; 2020 -  <script>document.write(new Date().getFullYear())</script> · <a style="text-decoration: none;" href="https://lab.aquanir.cc">nir's Labs</a> · Service name</p>
+        </div>
+    </div>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #212121;
+            color: #fff;
+            line-height: 1.6;
+            font-size: 40px;
+            font-family: "Microsoft YaHei";
+            font-family: Ubuntu, "Helvetica Neue", Helvetica, "Nimbus Sans L", "Open Sans", "Roboto", "Segoe WP", "Segoe UI", arial, "Liberation Sans", freesans, clean, "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans CJK TC", "Source Han Sans TW", "Noto Sans CJK JP", "Source Han Sans JP", "Noto Sans CJK", "Source Han Sans", "Microsoft YaHei UI", "Microsoft YaHei", DengXian, "Wenquanyi Micro Hei", "ST Heiti", "Droid Sans Fallback", "Microsoft JhengHei", SimSun, sans-serif;
+        }
+        
+        a {
+            color: #fff;
+        }
+        
+        .bottom {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+        }
+        
+        h1 {
+            opacity: 1;
+            font-weight: lighter;
+            font-size: 2em;
+        }
+        
+        h1 span {
+            color: #66ccff;
+        }
+        
+        p {
+            opacity: .7;
+            font-weight: lighter;
+        }
+        
+        .about p {
+            font-size: .6em;
+        }
+        
+        .help {
+            transition: .3s all ease-out;
+            max-height: 0;
+            overflow: hidden;
+            font-size: .7em;
+        }
+        
+        .help.active {
+            padding: 10px 0;
+            max-height: 200px;
+        }
+        
+        p.ss {
+            margin-top: 30px;
+            font-size: 13px;
+            opacity: .2;
+        }
+        
+        @media screen and (max-width:700px) {
+            body {
+                font-size: 30px;
+            }
+            h1 {
+                padding: 10px 0;
+            }
+        }
+    </style>
+    <script>
+        function getHelp() {
+            document.getElementById('help').classList.add("active");
+        }
+    </script>
+</body>
+
+</html>
