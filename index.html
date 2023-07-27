@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Redirecting…</title>
-    <link rel="canonical"
-        href="https://lab.nirland.net">
-    <script>location = "https://lab.nirland.net"</script>
+  <meta charset="UTF-8">
+  <title>Index - webstatic.aquanir.cc</title>
 </head>
 
-</html>
+<body>
+  <!-- jump to homepage -->
+  <script>
+    function jumpUrl() {
+      var arr = new Array(
+        "https://aquanir.cc",
+      );
+      window.location.href = arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    setTimeout(function () {
+      jumpUrl();
+    }, 10);//设定跳转时间，1s=1000
+  </script>
